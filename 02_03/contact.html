@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & FAQ - [Your Book Store Name]</title>
+  <meta name="description" content="[Short description of your bookstore and its contact information]">
+  <meta name="keywords" content="[List of relevant keywords related to your bookstore and contact options]">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="[Your Bookstore Logo]">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore Books</a></li>
+        <li><a href="authors.html">Meet the Authors</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="active"><a href="contact.html">Contact & FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:[your_email]">[your_email]</a></p>
+        <p><strong>Phone:</strong> <a href="tel:[your_phone_number]">[your_phone_number]</a></p>
+        <p><strong>Address:</strong> [Your Bookstore Address]<br>
+          [Optional: City, State, Zip Code]</p>
+      </div>
+      <div class="map-placeholder">
+        </div>
+      <form action="/contact" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason">
+          <option value="general">General Inquiry</option>
+          <option value="order">Order Status</option>
+          <option value="feedback">Feedback & Suggestions</option>
+        </select>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>
+          <h3 itemprop="name">What are your store hours?</h3>
+          <p itemprop="description">[Your store hours]</p>
+        </li>
+        <li>
+          <h3 itemprop="name">Do you offer book recommendations?</h3>
+          <p itemprop="description">[Yes/No] We're happy to help you find your next great read! Just let us know what you're looking for.</p>
+        </li>
+        </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; [Your Bookstore Name] 2023</p>
+    <ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
