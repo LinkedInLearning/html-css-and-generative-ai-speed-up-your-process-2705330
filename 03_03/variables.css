@@ -1,0 +1,35 @@
+
+:root {
+    /* Color Scheme */
+    --primary-color: #2f4f4f; /* Deep Forest Green */
+    --secondary-color: #800000; /* Rich Burgundy */
+    --tertiary-color: #daa520; /* Muted Gold */
+    --accent-color: #bdb76b; /* Warm Grey */
+    --lighter-green: #628282; /* Lighter version of Primary Color */
+    --black: #000000; /* Black */
+    --white: #ffffff; /* White */
+
+    /* Fonts */
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color); /* Primary color for body text */
+    background-color: var(--white); /* White background */
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--secondary-color); /* Secondary color for headers */
+}
+
+/* Example class usage */
+.primary-color { color: var(--primary-color); }
+.secondary-color { color: var(--secondary-color); }
+.tertiary-color { color: var(--tertiary-color); }
+.accent-color { color: var(--accent-color); }
+.lighter-green { color: var(--lighter-green); }
+.black-text { color: var(--black); }
+.white-text { background-color: var(--primary-color); color: var(--white); padding: 5px; }

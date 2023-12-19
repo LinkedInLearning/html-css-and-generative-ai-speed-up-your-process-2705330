@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    /* Color Scheme */
+    --primary-color: #2f4f4f; /* Deep Forest Green */
+    --secondary-color: #800000; /* Rich Burgundy */
+    --tertiary-color: #daa520; /* Muted Gold */
+    --accent-color: #bdb76b; /* Warm Grey */
+    --lighter-green: #628282; /* Lighter version of Primary Color */
+    --black: #000000; /* Black */
+    --white: #ffffff; /* White */
+
+    /* Fonts */
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* Base HTML Elements */
+body {
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: var(--header-font);
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+p {
+    color: var(--primary-color);
+    font-family: var(--body-font);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo img {
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero .hero-image {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Text */
+.about-text h2 {
+    margin-top: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+}
+
+.team .team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+.team .team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+/* Responsive Breakpoint at 600px */
+@media (max-width: 600px) {
+    /* Hamburger Icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hide the list items in the nav */
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: var(--primary-color);
+        width: 50%;
+        text-align: left;
+        padding: 10px;
+        border-radius: 0 0 0 10px;
+    }
+
+    /* Show the nav items when hamburger is clicked */
+    .hamburger.active + nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Centering the title */
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjusting header layout */
+    header {
+        flex-direction: column;
+    }
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    width: 30px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #d0b0b0;
+        --secondary-color: #7fffff;
+        --tertiary-color: #255adf;
+        --accent-color: #424894;
+        --lighter-green: #9d7d7d;
+        --black: #FFF;
+        --white: #000;
+    }
+    /* Additional styles for dark mode can be added here */
+}

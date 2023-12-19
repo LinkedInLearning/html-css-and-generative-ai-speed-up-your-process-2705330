@@ -1,0 +1,120 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Color scheme */
+    --primary-text-color: #333333;
+    --background-color: #FFFFFF;
+    --secondary-text-color: #757575;
+    --light-grey-color: #E0E0E0;
+    --accent-color: #fe5e24;
+
+    /* Fonts */
+    --primary-font: 'Lora', serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-text-color: #CCCCCC; /* Lighter text for dark backgrounds */
+        --background-color: #121212; /* Darker background */
+        --secondary-text-color: #909090; /* Slightly lighter grey for secondary text */
+        --light-grey-color: #2A2A2A; /* Dark grey for elements like containers */
+        --accent-color: #ff8a65; /* A lighter shade of the accent color for better visibility */
+    }
+}
+
+/* Base styles */
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+		 font-size: 1.25rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 2.5rem; /* Example: original size was 2rem */
+}
+
+h2 {
+    font-size: 2rem; /* Example: original size was 1.75rem */
+}
+
+/* Continue adjusting other elements as needed */
+
+
+/* Accent color for links, buttons, etc. */
+/* Style for hyperlinks */
+a {
+    color: var(--accent-color); /* Accent color for links */
+    transition: opacity 0.3s; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect for hyperlinks */
+a:hover {
+    opacity: 0.5; /* 50% opacity on hover */
+}
+
+
+/* Secondary text color for less prominent text */
+.secondary-text {
+    color: var(--secondary-text-color);
+}
+
+/* Light grey background for sections or elements */
+.light-background {
+    background-color: var(--light-grey-color);
+}
+
+/* Example class for button styling */
+.button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Example class for form input styling */
+input[type=email], input[type=submit] {
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* You can add more specific styles as per your requirements */
+.content-container {
+    max-width: 900px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Add some padding inside the container */
+}
+
+/* Style for the headshot */
+header img {
+    display: block; /* Allows margin: auto to work */
+    max-width: 250px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image a circle */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Centering the headline and subheadline */
+header h1, header h2 {
+    text-align: center; /* Centers the text */
+}
