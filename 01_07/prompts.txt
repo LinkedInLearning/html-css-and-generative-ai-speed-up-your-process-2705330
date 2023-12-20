@@ -1,0 +1,7 @@
+1) I'm working on a new personal website. My name is Joe Casabona and I'm a podcast coach and would like to have a resume site that has my experience, information about me, and how to get in touch, the services I offer, and some social proof. I'd also like to have a blog where I talk about how to launch, grow, and monetize your podcast. The goal is to get more people to hire me as their coach. Is there anything you think I'm missing from a website like this?
+
+2) I think the video, newsletter subscription/signup, case studies, and FAQs sound great. Using all of the information I've provided, can you create a sitemap for me?
+
+3) Using this sitemap, can you create a text-based prototype?
+
+4) Can you update this to include a video in the hero section on the homepage?
