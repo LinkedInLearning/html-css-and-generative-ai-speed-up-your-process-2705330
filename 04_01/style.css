@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+	--color-primary-text: #000000;
+	--color-background: #FFFFFF;
+	--color-secondary-text: #808080;
+	--color-light-grey: #d3d3d3;
+	--color-dark-grey: #333333;
+	--color-accent: #fe5e24;
+	--font-primary: 'Merriweather', serif;
+	--font-secondary: 'PT Serif', serif;
+}
+
+body {
+	font-family: var(--font-primary);
+	color: var(--color-primary-text);
+	background-color: var(--color-background);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-secondary);
+	color: var(--color-dark-grey);
+}
+
+a, .button {
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+p, li, dd, dt {
+	color: var(--color-primary-text);
+}
+
+nav, .footer, .secondary-text {
+	color: var(--color-secondary-text);
+}
+
+.container {
+	max-width: 900px;
+	margin: 50px auto;
+	border: 1px solid var(--color-light-grey);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	background-color: var(--color-background);
+}
+
+header {
+	background-color: var(--color-dark-grey);
+	padding: 40px 0;
+	text-align: center;
+}
+
+header h1,
+header nav a,
+.menu-btn {
+	color: white;
+}
+
+header nav a:hover {
+	color: var(--color-accent);
+}
+
+header img {
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+nav li {
+	margin: 0;
+}
+
+.menu-btn {
+	display: none;
+	background-color: var(--color-accent);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#toggle-menu {
+	display: none;
+}
+
+#toggle-menu:checked + nav ul {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-btn {
+		display: block;
+	}
+
+	nav ul {
+		display: none;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#toggle-menu:checked + nav ul {
+		display: flex;
+	}
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
