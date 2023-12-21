@@ -1,0 +1,6 @@
+Please generate a single website using accessible, modern HTML, that contains the following: a headline with my name (Joe Casabona) and a subheadline that reads, "Podcast Automations Coach." Above the headline, please include a placeholder for a headshot. Below the subheadline, please include my short bio: 
+
+Joe Casabona is podcast systems coach who helps busy solopreneurs take back their time. Some even say he perfectly blend content creation and technology like it’s the best cup of coffee you’ve ever had (he says that). Joe's strategies come from his many years of experience: over 10 years creating podcasts, more than 15 years teaching, and over 20 years as a web developer.
+
+After that, you can create 3 placeholder sections: one for 5 trust logos, one for a call to action that should be some text and then a button that says, "Schedule a call," and a form for an email opt-in.
+

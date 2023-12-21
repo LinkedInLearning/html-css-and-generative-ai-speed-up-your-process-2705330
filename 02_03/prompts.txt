@@ -1,0 +1,26 @@
+I'm creating a website for a book store that sells self-published books for authors and need some HTML markup generated. I'd like a generic HTML template I can use across multiple pages. The template should us best practices in SEO and accessibility, as well as modern web development best practices. The template should have a header, navigation, footer, and a content area that can include text, images, and multimedia. Please create 2 versions of this template: one that will have main content section and a sidebar, and one with just the main content section.
+
+======================
+
+Great! Now I'd like the HTML template for an about page using Version 2 of the template you just created. The about page should have a hero section with an intro paragraph, and a photo of the store. Below that, a section for the rest of the about text, which should include the following:
+
+- Our Story
+ - Mission and Values
+ - Meet Our Team
+
+You can use placeholder images anywhere you need to. The template should be SEO friendly and accessible, using proper markup and schemas when necessary.
+
+===============
+
+Finally, I'd like to create a contact page HTML template. You can use Version 1 of the HTML template you created, with the following format:
+
+Contact Information: Email, phone, address. Please include a full-width google map embed placeholder here.  There should also be a contact form that collects name, email (both required), reason for contacting us, and a large textarea for the body of the message. 
+
+FAQ Section: Common queries and their answers.
+
+Please ensure all sections have accessible markup, are SEO-friendly, and when necessary, they use the right schema to signal the type of content for Google and other search engines.
+
+==========
+
+
+Can you update the placeholder email, phone and address to use filler info with the right HTML mark (eg tel:) and can you update the FAQ section to use a definition list (<dl>) with the FAQ schema attached?
