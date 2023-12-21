@@ -1,0 +1,38 @@
+I'm working on a new personal website. I'm a podcast coach and would like to have a resume site that has my experience, information about me, and how to get in touch, the services I offer, and some social proof. I'd also like to have a blog where I talk about how to launch, grow, and monetize your podcast. The goal is to get more people to hire me. Here's the basic sitemap I came up with: 
+
+- Home
+- About Joe Casabona
+- Services
+  - Podcast Coaching
+  - Consulting
+  - Workshops
+- Blog
+  - How to Launch Your Podcast
+  - Strategies for Growing Your Podcast
+  - Monetization Tips for Podcasters
+  - [Other Relevant Blog Categories]
+- Video Library
+- Podcast Coaching Case Studies
+- Testimonials
+- Contact
+  - Contact Form
+  - Email Address
+- Newsletter Signup
+- Resource Library
+- FAQ
+- Privacy Policy
+- Terms of Service
+
+Can you create an HTML template using the best SEO and accessibility practices that I can use to build out this website?
+
+==========
+
+Thanks! Using this template, can you create a page for my resume, with sections for experience, education, awards and honors, and published works? Please use filler information so I can get a good idea of how I'll structure the actual information. If you have the ability, you can pull content from this web page, which is my current resume: https://casabona.org/cv/
+
+=======
+
+Please give me a sample for each entry, using a description list, where the entries would include title, organization, date started and finished, and a list of responsibilities or achievements.
+
+=======
+
+This is great. Finally, can you create a blog post template? This should use the best practices for SEO, marking up the correct schema for google and other search engines.
