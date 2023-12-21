@@ -1,0 +1,21 @@
+I'm launching a new website for a bookstore and would like to brainstorm some color schemes and font combinations. Can you help me with that?
+
+=======
+
+I really like the Nature-Inspired Theme with the earthy tones. Can you come up with primary, secondary, tertiary, and accent colors based on that. Please provide the HEX and RGB versions, as well as the names of each color.
+
+====
+
+Can you generate an image of squares using these colors so I can use it for reference.
+
+======
+
+I really like the fonts Playfair Display and Lato. Can you generate the CSS import code to grab those fonts?
+
+======
+
+Can you generate an HTML template using these colors and fonts so that I can have it for reference?
+
+======
+
+Can you update the color scheme to make the primary color a darker green?

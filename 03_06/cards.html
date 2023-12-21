@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid Layout</title>
+    <style>
+			body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+		</style>
+</head>
+<body>
+    <div class="card-grid">
+        <div class="card">Card 1 Content</div>
+        <div class="card">Card 2 Content</div>
+        <div class="card">Card 3 Content</div>
+        <!-- Add more cards as needed -->
+    </div>
+</body>
+</html>

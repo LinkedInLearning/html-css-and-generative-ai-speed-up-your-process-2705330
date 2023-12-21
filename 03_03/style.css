@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    /* Color Variables */
+    --primary-color: #1E4D2B; /* Darker Green */
+    --secondary-color: #8B4513; /* Earth Brown */
+    --tertiary-color-1: #F5F5DC; /* Beige */
+    --tertiary-color-2: #8A9A5B; /* Moss Green */
+    --accent-color: #FFA07A; /* Sunset Orange */
+		--color-black: #000000; /* Black */
+    --color-white: #FFFFFF; /* White */
+    --color-dark-grey: #333333; /* Dark Grey */
+
+    /* Font Variables */
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Inverted Dark Mode Variables */
+        --primary-color: #4DBD8C; /* Lighter Green */
+        --secondary-color: #E6A57E; /* Light Earth Brown */
+        --tertiary-color-1: #333333; /* Dark Grey (as background) */
+        --tertiary-color-2: #B0B69F; /* Light Moss Green */
+        --accent-color: #FFD1AA; /* Lighter Sunset Orange */
+        --color-black: #FFFFFF; /* White (for text) */
+        --color-white: #000000; /* Black (for backgrounds) */
+        --color-dark-grey: #CCCCCC; /* Light Grey */
+    }
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    background-color: var(--tertiary-color-1);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+}
+
+.main-content {
+    padding: 20px;
+    background-color: var(--tertiary-color-1);
+}
+
+footer {
+    background-color: var(--tertiary-color-2);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.accent {
+    color: var(--accent-color);
+}

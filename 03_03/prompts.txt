@@ -1,0 +1,9 @@
+Using those colors and fonts, can you create a set of CSS variables for me to use?
+
+=====
+
+Can you also add black, white, and a dark grey to the color scheme?
+
+=====
+
+This is great! Can you create inverted versions of the colors for when the user has their device in dark mode? It should assumed that the background will be dark (perhaps the dark grey) and all of the text and links should be readable against that background. Instead of creating a new set of variables, please rename the current variables using the media query to detect dark mode.

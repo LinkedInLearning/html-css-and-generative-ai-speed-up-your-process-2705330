@@ -1,0 +1,161 @@
+:root {
+    /* Color Variables */
+    --primary-color: #1E4D2B; /* Darker Green */
+    --secondary-color: #8B4513; /* Earth Brown */
+    --tertiary-color-1: #F5F5DC; /* Beige */
+    --tertiary-color-2: #8A9A5B; /* Moss Green */
+    --accent-color: #FFA07A; /* Sunset Orange */
+		--color-black: #000000; /* Black */
+    --color-white: #FFFFFF; /* White */
+    --color-dark-grey: #333333; /* Dark Grey */
+
+    /* Font Variables */
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
+}
+
+body {
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+/** Author Styles **/
+.author-bio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bio-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.bio-image img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bio-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.bio-content h3 {
+    margin-top: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--primary-color); /* Using the primary color variable */
+    font-size: 16px;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+
+/** Cards Styles **/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a 3-column layout */
+    gap: 20px; /* Spacing between cards */
+    margin: 0 auto; /* Centers the grid in the parent container */
+    padding: 20px; /* Padding around the grid */
+}
+
+.card {
+    background-color: var(--tertiary-color-1); /* Card background color */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Grey drop shadow */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 10px; /* Padding inside each card */
+    word-wrap: break-word; /* Ensures text stays within the card */
+    overflow: hidden; /* Prevents content from spilling outside the border-radius */
+}
+
+.card img {
+    max-width: 100%; /* Ensures the image does not exceed the card's width */
+    height: auto; /* Keeps the image aspect ratio intact */
+    border-top-left-radius: 10px; /* Rounded corners for the image */
+    border-top-right-radius: 10px; /* Rounded corners for the image */
+}
+
+.card h3 {
+    margin-top: 0; /* Removes default margin */
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--accent-color); /* Link color */
+}
+
+/** Article Styles **/
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article header h1 {
+    font-family: var(--secondary-font); /* Bold and distinctive font */
+    font-size: 2.5em; /* Large headline size */
+    margin-bottom: 0.5em;
+}
+
+article .byline {
+    font-family: var(--primary-font);
+		background-color: #FFFFE0;
+	  padding: 2px;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+article figure {
+    margin: 0;
+    padding: 0;
+}
+
+article figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center by default */
+}
+
+img.align-left {
+    float: left;
+    margin-right: 15px;
+}
+
+img.align-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.article-content {
+    font-family: var(--primary-font);
+    text-align: left;
+    line-height: 1.6;
+}
+
+article footer {
+    font-family: var(--primary-font);
+    font-size: 0.9em;
+    margin-top: 2em;
+}

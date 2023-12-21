@@ -1,0 +1,11 @@
+Can you update the full stylesheet to include breakpoints at 768px and 480px to ensure everything looks good on smaller screens? The form should have bigger inputs, and the navigation menu should fold into a hidden div that reveals itself when a "menu" button is pressed. Please also add styles for 2- and 3- column layouts that collapse into 1-column layouts when the screen is less than 768px wide. 
+
+===
+
+Can you create the HTML and CSS from scratch for a navigation menu on a website? It should be an unordered list, right aligned on big screens, all in a row and evenly spaced. On smaller screens (say, less than 600px) the menu should be hidden behind the word "menu." When tapped, that menu should reveal the list of navigation items, stacked one on top of the other.
+
+Can you provide a solution that does not rely on javascript?
+
+===
+
+I'd like you to create a grid of "cards" from scratch in both HTML and CSS. The grid can have any number of cards, but there should only be max 3 columns. I’d like each card to have a grey drop shadow, slightly rounded corners, and 10px of padding. They should be spaced evenly with 20px between each card. at 768px or fewer, there should be a max of 2 columns. At 500px or fewer, it should be one column. I'd like you to use CSS grid.

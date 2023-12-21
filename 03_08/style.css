@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+
+:root {
+    /* Color Scheme */
+    --color-primary-text: #000000;
+    --color-background: #FFFFFF;
+    --color-secondary-text: #808080;
+    --color-light-grey: #d3d3d3;
+    --color-dark-grey: #333333;
+    --color-accent: #fe5e24;
+
+    /* Fonts */
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'PT Serif', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-primary-text);
+    background-color: var(--color-background);
+		margin: 0;
+		padding: 0;
+		width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    color: var(--color-dark-grey);
+}
+
+a, .button {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+p, li, dd, dt {
+    color: var(--color-primary-text);
+}
+
+nav, .footer, .secondary-text {
+    color: var(--color-secondary-text);
+}
+
+/* Additional styles as needed, using the defined variables */
+.container {
+    max-width: 900px;
+    margin: 50px auto; /* Centers the content */
+    border: 1px solid var(--color-light-grey); /* Light grey border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Optional: Adds some spacing inside the container */
+    background-color: var(--color-background); /* Background color */
+}
+header {
+    background-color: var(--color-dark-grey); /* Dark grey background */
+    padding: 40px 0; /* 40px padding top and bottom */
+    text-align: center;
+}
+
+header h1,
+header nav a,
+.menu-btn {
+    color: white; /* Inverted font color for readability */
+}
+
+/* Optional: Change the hover color for links in the header */
+header nav a:hover {
+    color: var(--color-accent);
+}
+
+/* Rest of the styles remain the same */
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between menu items */
+}
+
+nav li {
+    margin: 0;
+}
+
+/* Styles for the menu button */
+.menu-btn {
+    display: none;
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hide/Show the navigation when the menu button is clicked */
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked + nav ul {
+    display: block;
+}
+
+@media screen and (max-width: 600px) { /* Adjust breakpoint as needed */
+    .menu-btn {
+        display: block; /* Show menu button on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu initially */
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    #toggle-menu:checked + nav ul {
+        display: flex; /* Show menu when checkbox is checked */
+    }
+}
+

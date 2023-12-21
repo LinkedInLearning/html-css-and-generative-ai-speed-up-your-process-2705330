@@ -1,0 +1,63 @@
+
+/* Navigation Menu - Mobile Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--secondary-color);
+        width: 100%;
+        left: 0;
+        top: 60px; /* Adjust based on header height */
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* 2- and 3- Column Layouts */
+.two-column, .three-column {
+    display: grid;
+    gap: 20px;
+}
+
+.two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.three-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .two-column, .three-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Form Styles for Smaller Screens */
+@media (max-width: 480px) {
+    .contact-form input, 
+    .contact-form select, 
+    .contact-form textarea {
+        font-size: 16px; /* Larger font size for readability */
+        padding: 15px; /* Bigger padding for easier interaction */
+    }
+}

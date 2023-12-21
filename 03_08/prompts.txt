@@ -1,0 +1,101 @@
+Here is the HTML markup for a new resume site I'm working on. I'm going to provide a series of prompts to help me write CSS for it. Do you understand?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Casabona - Curriculum Vita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+			<h1>Joe Casabona</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Joe</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Resume</h2>
+        
+        <section id="professional-employment">
+            <h2>Professional Employment</h2>
+            <dl>
+							<dt>Title:</dt>
+							<dd>Senior Podcast Coach</dd>
+							<dt>Organization:</dt>
+							<dd>Podcast Success Academy</dd>
+							<dt>Date:</dt>
+							<dd>January 2018 - Present</dd>
+							<dt>Responsibilities/Achievements:</dt>
+							<dd>
+									<ul>
+											<li>Developed comprehensive podcasting courses attended by over 500 students.</li>
+											<li>Successfully coached 100+ individuals, helping them launch successful podcasts.</li>
+											<li>Regularly invited as a keynote speaker at international podcasting conferences.</li>
+									</ul>
+							</dd>
+					</dl>
+
+        </section>
+
+        <section id="course-development">
+            <h2>Course Development</h2>
+            <p>[Fill with your course development details]</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>[Fill with your educational background]</p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>[Fill with details of your publications]</p>
+        </section>
+
+        <section id="speaking-events">
+            <h2>Notable Speaking Events</h2>
+            <p>[Fill with your notable speaking events]</p>
+        </section>
+
+        <section id="professional-activities">
+            <h2>Professional Activities/Service</h2>
+            <p>[Fill with your professional activities and services]</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your Footer Content Here -->
+    </footer>
+</body>
+</html>
+
+====
+
+Let's start with colors and fonts. I'd like a pretty muted color scheme — black, white, and some greys — with a single accent color: #fe5e24. For the fonts, I'd like classic print style serif fonts. Can you make some suggestions?
+
+====
+
+Great - let's roll with that. Can we also add a darker grey (maybe #333333) into the color scheme as well. Can you create a set of CSS variables for both the colors and the fonts, as well as the @import code for the fonts?
+
+Can you. make the headings --color-dark-grey instead?
+
+===
+
+OK next, I'd like the entire content to be a max-width of 900px, centered on the page. I'd also like it to have a border using the light grey color, and a subtle shadow. Can you provide the CSS for that?
+
+====
+
+Let's also center the header, and make the navigation into a horizontal layout with each element next to each other. On smaller screens, the navigation should collapse under a button labeled "menu." when clicked or pressed, the menu button should reveal the navigation. Avoid using javascript if you can.
+
+====
+
+Can you also use the dark grey for the header background, adding 40px of padding top and bottom, and invert the header's font colors to make the readable on a dark background.
